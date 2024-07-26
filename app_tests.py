@@ -9,7 +9,7 @@ def client():
         yield client  
 
 def test_get_data(client):
-
+    """Test for the data requested and pagination"""
     response = client.get('/api/data')
     assert response.status_code == 200
 
